@@ -14,12 +14,13 @@ def citation_report(links):
     print(a_tag.parent.parent.parent.get_text())
   
 
-def citations_count(link):
+def citations_count(links):
   counter = 0
-  for a_tag in links:
+  for i in links:
     counter += 1
   print(f"There are {counter} citations needed on this page")
     
 
 citations_count(links)
+
 citation_report(links)
